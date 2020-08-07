@@ -1,0 +1,103 @@
+.index_hi{
+	@extend %mabryC;
+	color: white;
+	display: inline-block;
+}
+
+.index_risd{
+	//Used h4 to declare initial @extend
+}
+
+.index_aboutme{
+	@extend %apocC;
+}
+
+.projects_title{
+	//Used h3 to declare initial @extend
+}
+
+.projects_description{
+	@extend %apocC;
+}
+
+.projects_more{
+	@extend %mabryCardB;
+}
+
+@media screen and (min-width: $screen-one) {
+.index_hi{
+	@include mabryB;
+}
+
+.index_risd{
+	//no changes
+}
+
+.index_aboutme{
+	@include apocB;
+}
+
+.projects_title{
+	@include mabryB;
+}
+
+.projects_description{
+	//no changes
+}
+
+.projects_more{
+	//no changes
+}
+}
+
+@media screen and (min-width: $screen-two) {
+.index_hi{
+	//no changes
+}
+
+.index_risd{
+	//no changes
+}
+
+.index_aboutme{
+	//no changes
+}
+
+.projects_title{
+	//no changes
+}
+
+.projects_description{
+	//no changes
+}
+
+.projects_more{
+	//no changes
+}
+}
+
+@media screen and (min-width: $screen-three) {
+.index_hi{
+	@include mabryA;
+}
+
+.index_risd{
+	@include mabryC;
+}
+
+.index_aboutme{
+	@include apocA;
+}
+
+.projects_title{
+	//no changes
+}
+
+.projects_description{
+	@include apocB;
+}
+
+.projects_more{
+	@include mabryD;
+}
+}

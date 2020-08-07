@@ -1,0 +1,110 @@
+//slide in interaction
+%initial{
+	opacity: 0;
+	transform: translateY(50px);
+	transition: all 0.3s ease-out;
+}
+
+.grid_item_one {
+	@extend %initial;
+}
+.grid_item_two {
+	@extend %initial;
+}
+.grid_item_three {
+	@extend %initial;
+}
+.grid_item_four {
+	@extend %initial;
+}
+.grid_item_five {
+	@extend %initial;
+}
+.grid_item_six {
+	@extend %initial;
+}
+.grid_item_seven {
+	@extend %initial;
+}
+.grid_item_eight {
+	@extend %initial;
+}
+.grid_item_nine {
+	@extend %initial;
+}
+.grid_item_ten {
+	@extend %initial;
+}
+
+.hobby_one{
+	@extend %initial;
+}
+.hobby_two{
+	@extend %initial;
+}
+.hobby_three{
+	@extend %initial;
+}
+.hobby_four{
+	@extend %initial;
+}
+.hobby_five{
+	@extend %initial;
+}
+.hobby_six{
+	@extend %initial;
+}
+.hobby_seven{
+	@extend %initial;
+}
+.hobby_eight{
+	@extend %initial;
+}
+.hobby_nine{
+	@extend %initial;
+}
+.hobby_ten{
+	@extend %initial;
+}
+.hobby_eleven{
+	@extend %initial;
+}
+.hobby_twelve{
+	@extend %initial;
+}
+.hobby_thirteen{
+	@extend %initial;
+}
+.hobby_fourteen{
+	@extend %initial;
+}
+.hobby_fifteen{
+	@extend %initial;
+}
+.hobby_sixteen{
+	@extend %initial;
+}
+.hobby_seventeen{
+	@extend %initial;
+}
+.hobby_eighteen{
+	@extend %initial;
+}
+.hobby_nineteen{
+	@extend %initial;
+}
+.hobby_twenty{
+	@extend %initial;
+}
+.hobby_twentyone{
+	@extend %initial;
+}
+.hobby_twentytwo{
+	@extend %initial;
+}
+
+/* uncss:ignore */
+.slide_in{
+	opacity: 1;
+	transform: translateY(0px);
+}
