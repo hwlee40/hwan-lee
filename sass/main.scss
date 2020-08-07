@@ -1,8 +1,0 @@
-@import "base/_colors", "base/_typography", "base/_standardize", "base/_blanks", "base/_paragraphs", "base/_scroll";
-@import "layout/_header", "layout/footer", "layout/_grid";
-@import "components/_imagebutton", "components/_jobsbutton", "components/_hwanbutton", "components/_hobbiesbutton", "components/_pagetagbutton", "components/_otherprojects", "components/_draggable";
-@import "pages/_index", "pages/_acne";
-
-body {
-	overflow-x: hidden;
-}
