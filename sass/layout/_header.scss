@@ -5,13 +5,6 @@
 	position: fixed;
 	border-radius: 0 0 15px 15px;
 	z-index: 9999;
-
-	top: 0px;
-	transition: top 0.2s ease-in-out;
-}
-//nav-up decides how much to move header up on scroll
-.nav-up{
-	top: -32px;
 }
 
 .float_left{
@@ -47,23 +40,8 @@
 
 	}
 }
-
-@media screen and (min-width: $screen-three) {
+@media screen and (min-width: $screen-four) {
 	.header{
-		height: 38px;
-	}
-	.nav-up{
-		top: -38px;
-	}
-	.float_left{
-		padding-top: 3.5px;
-		padding-left: 40px;
-	}
-	.float_right{
-		padding-top: 3.5px;
-		padding-right: 40px;
-	}
-	.mabry_card_b{
-		@include mabryCardA;
+
 	}
 }

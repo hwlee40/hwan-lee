@@ -64,9 +64,14 @@
 		
 	}
 	.footer_inner{
-		margin: 30px 40px 30px;
+		margin: 30px 20px 30px;
 	}
 	.mabry_g{
 		
+	}
+}
+@media screen and (min-width: $screen-four){
+	.footer_inner{
+		margin: 30px 12vw 30px;
 	}
 }
