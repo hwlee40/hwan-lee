@@ -1,5 +1,19 @@
 import ScrollMagic from 'scrollmagic';
 
+//Contact
+$(function() {
+  $(".header").hover(function() {
+    $(".overlay").toggleClass("slide_in");
+  });
+});
+
+//Smooth Scrolling Index
+$(".hero_text_sticky").click(function() {
+    $('html, body').animate({
+        scrollTop: $("body").offset().top
+    }, 400);
+});
+
 //Flickity Carousel Interactivity
 $(document).ready(function(){
     $('.container_slides').flickity({

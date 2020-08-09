@@ -9,6 +9,12 @@
 //standardize links
 .link_style_fix{
 	text-decoration: none;
+	color: $florescent-blue;
+}
+.button_style_fix{
+	padding: 0;
+	border: none;
+	background: none;
 }
 .link_color_fix{
 	color: white

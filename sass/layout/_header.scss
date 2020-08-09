@@ -3,18 +3,22 @@
 }
 .header{
 	position: fixed;
-	width: 100%;
+	width: auto;
 	z-index: 9999;
+	right: 16px;
+	left: auto;
+	@media screen and (min-width: $screen-one) {
+		right: 20px;
+	}
+	@media screen and (min-width: $screen-four) {
+		right: 12vw;
+	}
 }
 .header_contact{
 	@extend %mabryC;
 	color: $florescent-blue;
-	margin-right: 16px;
-	float: right;
+	text-align: right;
 	font-weight: 200;
-	@media screen and (min-width: $screen-one) {
-		margin-right: 20px;
-	}
 	@media screen and (min-width: $screen-two) {
 		@include mabryB;
 		font-size: 50px;
@@ -24,27 +28,28 @@
 		@include mabryB;
 		font-weight: 200;
 	}
-	@media screen and (min-width: $screen-four) {
-		margin-right: 12vw;
-	}
-}
-
-.header_contact_projects{
-	@extend .header_contact;
 }
 .header_projects{
-	@extend .header;
+	z-index: 99999;
+	left: 16px;
+	right: auto;
+	position: fixed;
+	@media screen and (min-width: $screen-four) {
+		left: 12vw;
+		right: auto;
+	}
 }
 .header_hwan_projects{
-	@extend .header_contact;
-	float: left;
-	font-weight: 900;
-	margin-left: 16px;
-	@media screen and (min-width: $screen-one) {
-		margin-left: 20px;
+	@extend %mabryC;
+	font-weight: 200;
+	@media screen and (min-width: $screen-two) {
+		@include mabryB;
+		font-size: 50px;
+		font-weight: 200;
 	}
-	@media screen and (min-width: $screen-four) {
-		margin-left: 12vw;
+	@media screen and (min-width: $screen-three) {
+		@include mabryB;
+		font-weight: 200;
 	}
 }
 

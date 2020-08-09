@@ -12,6 +12,10 @@
 .hobby_secondary{
 	@extend .hobby;
 	background: $peach-fuzz;
+
+	&:hover{
+		opacity: 0.2;
+	}
 }
 
 .hobby_inner{
