@@ -133,6 +133,7 @@
 .hero_text_sticky{
 	color: $florescent-blue;
 	@extend %mabryC;
+	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	margin-left: 16px;
