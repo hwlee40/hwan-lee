@@ -7,9 +7,6 @@
 	//use this to test grid for adjustments
 	//background: yellow;
 }
-.grid_container_secondary{
-	@extend .grid_container;
-}
 .border{
 	//use this to test grid for adjustments
 	border: solid red 2px;
@@ -53,4 +50,9 @@
 		grid-template-columns: 12vw repeat(11, 1fr 20px) 1fr 12vw;
 		margin: 0 auto;
 	}
+}
+
+.grid_container_secondary{
+	@extend .grid_container;
+	padding-top: 16px;
 }

@@ -58,6 +58,10 @@ jQuery(document).ready(function() {
     $(".neon").hover(function () {
         $(".circle").toggleClass("bg_1");
     });
+
+    $(".pinkify").hover(function () {
+        $(".circle").toggleClass("bg_1");
+    });
     
 
 });
@@ -66,6 +70,8 @@ jQuery(document).ready(function() {
 
 
    //show after certain distance
+$(window).scrollTop($(window).scrollTop()+1);
+
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 400) {
@@ -75,6 +81,23 @@ $(document).scroll(function() {
   }
 });
 
+//Contact Header
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 100) {
+    $('.header').fadeIn();
+  } else {
+    $('.header').fadeOut();
+  }
+});
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 100) {
+    $('.header_projects').fadeIn();
+  } else {
+    $('.header_projects').fadeOut();
+  }
+});
 
 //ScrollMagic
 

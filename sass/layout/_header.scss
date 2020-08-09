@@ -1,47 +1,155 @@
+.header_gap{
+	height: 48px;
+}
 .header{
-	width: 100%;
-	height: 32px;
-	background: $salmon;
 	position: fixed;
-	border-radius: 0 0 15px 15px;
+	width: 100%;
 	z-index: 9999;
 }
-
-.float_left{
-	padding-top: 6px;
-	padding-left: 15px;
-	float: left;
-}
-.float_right{
-	padding-top: 6px;
-	padding-right: 15px;
+.header_contact{
+	@extend %mabryC;
+	color: $florescent-blue;
+	margin-right: 16px;
 	float: right;
+	font-weight: 200;
+	@media screen and (min-width: $screen-one) {
+		margin-right: 20px;
+	}
+	@media screen and (min-width: $screen-two) {
+		@include mabryB;
+		font-size: 50px;
+		font-weight: 200;
+	}
+	@media screen and (min-width: $screen-three) {
+		@include mabryB;
+		font-weight: 200;
+	}
+	@media screen and (min-width: $screen-four) {
+		margin-right: 12vw;
+	}
 }
-.mabry_card_b{
-	@extend %mabryCardB;
-	font-weight: 600;
-	letter-spacing: 0.02em;
-	color: white;
+
+.header_contact_projects{
+	@extend .header_contact;
+}
+.header_projects{
+	@extend .header;
+}
+.header_hwan_projects{
+	@extend .header_contact;
+	float: left;
+	font-weight: 900;
+	margin-left: 16px;
+	@media screen and (min-width: $screen-one) {
+		margin-left: 20px;
+	}
+	@media screen and (min-width: $screen-four) {
+		margin-left: 12vw;
+	}
+}
+
+//Hero Section
+.hero_emoji{
+	@extend %initial;
+	margin: 0px 16px 0 16px;
+	@media screen and (min-width: $screen-one) {
+		margin: 0px 20px 0 20px;
+	}
+	@media screen and (min-width: $screen-three) {
+		margin: 0px 20px 20px 20px;
+	}
+	@media screen and (min-width: $screen-four) {
+		margin-left: 12vw;
+		margin-right: 12vw;
+	}
+}
+.flag{
 	display: inline-block;
+	height: 50px;
+	margin-right: 5px;
 }
-
-@media screen and (min-width: $screen-one) {
-	.header{
+.love{
+	display: inline-block;
+	height: 40px;
+	padding-bottom: 5px;
+	margin-right: 5px;
+}
+.hero_text_outer{
+	@extend %initial;
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-top: -50px;
+	@media screen and (min-width: $screen-one) {
+		margin-left: 20px;
+		margin-right: 20px;
 	}
-	.nav-up{
+	@media screen and (min-width: $screen-two) {
+		margin-top: -60px;
 	}
-	.float_left{
-		padding-left: 20px;
+	@media screen and (min-width: $screen-three) {
+		margin-top: -73.6px;
 	}
-	.float_right{
-		padding-right: 20px;
-	}
-	.mabry_card_b{
-
+	@media screen and (min-width: $screen-four) {
+		margin-left: 12vw;
+		margin-right: 12vw;
 	}
 }
-@media screen and (min-width: $screen-four) {
-	.header{
-
+.hero_text{
+	@extend %mabryC;
+	font-weight: 200;
+	display: inline;
+	@media screen and (min-width: $screen-two) {
+		@include mabryB;
+		font-weight: 200;
+		font-size: 50px;
+		line-height: 120%;
 	}
+	@media screen and (min-width: $screen-three) {
+		@include mabryB;
+		font-weight: 200;
+		line-height: 130%;
+	}
+}
+.hero_text_discard{
+	color: $florescent-blue;
+	font-weight: bold;
+	@extend %mabryC;
+	display: inline;
+	opacity: 0;
+	@media screen and (min-width: $screen-two) {
+		@include mabryB;
+		font-size: 50px;
+		line-height: 120%;
+	}
+	@media screen and (min-width: $screen-three) {
+		@include mabryB;
+	}
+}
+.hero_text_sticky{
+	color: $florescent-blue;
+	@extend %mabryC;
+	position: sticky;
+	top: 0;
+	margin-left: 16px;
+	z-index: 9999;
+	font-weight: 900;
+	@media screen and (min-width: $screen-one) {
+		margin-left: 20px;
+	}
+	@media screen and (min-width: $screen-two) {
+		@include mabryB;
+		font-size: 50px;
+		line-height: 120%;
+		top: -10px;
+	}
+	@media screen and (min-width: $screen-three) {
+		@include mabryB;
+	}
+	@media screen and (min-width: $screen-four) {
+		margin-left: 12vw;
+	}
+}
+.hero_text_location{
+	color: $salmon;
+	font-weight: bold;
 }
