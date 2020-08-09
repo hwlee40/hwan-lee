@@ -9,7 +9,7 @@ $(function() {
 
 //Smooth Scrolling Index
 $(".hero_text_sticky").click(function() {
-    $('html, body').animate({
+    $('html').animate({
         scrollTop: $("body").offset().top
     }, 400);
 });

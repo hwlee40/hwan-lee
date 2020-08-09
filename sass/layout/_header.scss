@@ -131,6 +131,7 @@
 	}
 }
 .hero_text_sticky{
+	@extend %initial;
 	color: $florescent-blue;
 	@extend %mabryC;
 	position: -webkit-sticky;
@@ -146,7 +147,6 @@
 		@include mabryB;
 		font-size: 50px;
 		line-height: 120%;
-		top: -10px;
 	}
 	@media screen and (min-width: $screen-three) {
 		@include mabryB;
