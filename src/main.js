@@ -8,7 +8,7 @@ $(function() {
 });
 
 //Smooth Scrolling Index
-$(".hero_text_sticky").click(function() {
+$(".hero_text_sticky_inner").click(function() {
     $('html').animate({
         scrollTop: $("body").offset().top
     }, 400);

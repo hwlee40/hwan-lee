@@ -5,8 +5,12 @@
 	position: fixed;
 	width: auto;
 	z-index: 9999;
+	left: 8px;
+	right: auto;
+	@media screen and (min-width: 460px) {
 	right: 16px;
 	left: auto;
+	}
 	@media screen and (min-width: $screen-one) {
 		right: 20px;
 	}
@@ -15,6 +19,11 @@
 	}
 }
 .header_contact{
+
+	display: none;
+	@media screen and (min-width: $screen-one) {
+		display: block;
+	}
 	@extend %mabryC;
 	color: $florescent-blue;
 	text-align: right;
@@ -131,14 +140,16 @@
 	}
 }
 .hero_text_sticky{
-	@extend %initial;
-	color: $florescent-blue;
-	@extend %mabryC;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
+	z-index: 999;
+	@extend %initial;
+}
+.hero_text_sticky_inner{
 	margin-left: 16px;
-	z-index: 9999;
+	color: $florescent-blue;
+	@extend %mabryC;
 	font-weight: 900;
 	@media screen and (min-width: $screen-one) {
 		margin-left: 20px;

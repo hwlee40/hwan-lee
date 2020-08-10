@@ -2,9 +2,15 @@
 	cursor: pointer;
 }
 .overlay{
-	margin-top: 8px;
-	float: right;
-	@extend %initial;
+	margin-top: 56px;
+	@media screen and (min-width: 460px) {
+	margin-top: 10px;
+	}
+	@media screen and (min-width: $screen-one) {
+	opacity: 0;
+	transform: translateY(50px);
+	transition: all 0.3s ease-out;
+	}
 }
 .overlay_button{
 	margin-left: 8px;
@@ -16,9 +22,21 @@
 }
 .overlay_button_inner{
 	@extend %mabryC;
+	font-size: 24px;
 	font-weight: 200;
 	color: $florescent-blue;
 	text-align: right;
 	text-align: center;
 	vertical-align: middle;
+	@media screen and (min-width: $screen-one) {
+		font-size: 30px;
+	}
+	@media screen and (min-width: $screen-two) {
+		font-size: 36px;
+	}
+}
+/* uncss:ignore */
+.slide_in{
+	opacity: 1;
+	transform: translateY(0px);
 }
