@@ -7,7 +7,7 @@
 	z-index: 9999;
 	left: 8px;
 	right: auto;
-	@media screen and (min-width: 460px) {
+	@media screen and (min-width: $screen-mobile) {
 	right: 16px;
 	left: auto;
 	}
