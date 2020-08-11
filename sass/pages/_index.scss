@@ -1,14 +1,16 @@
 .circle {
 	position: absolute;
 	background-color: $florescent-blue;
-	width: 200px; 
-	height: 200px;
+	width: 0px; 
+	height: 0px;
 	border-radius: 50%;
 	z-index: -999;
 	visibility: hidden;
 	transition: background-color 0.3s ease;
 
 	@media screen and (min-width: $screen-one) {
+		width: 200px; 
+		height: 200px;
 		visibility: visible;
 	}
 	@media screen and (min-width: $screen-two){

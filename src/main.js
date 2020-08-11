@@ -1,5 +1,17 @@
 import ScrollMagic from 'scrollmagic';
 
+//Hamburger
+$(document).ready(function(){
+  $('#nav-icon3').click(function(){
+    $(this).toggleClass('open');
+  });
+
+  $("#nav-icon3").click(function() {
+    $(".overlay_burger").toggleClass("slide_in");
+  });
+
+});
+
 //Contact
 $(function() {
   $(".header").hover(function() {
@@ -95,7 +107,7 @@ $(document).scroll(function() {
   }
 });
 
-//Contact Header
+    //Contact Header
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 100) {
@@ -110,6 +122,22 @@ $(document).scroll(function() {
     $('.header_projects').fadeIn();
   } else {
     $('.header_projects').fadeOut();
+  }
+});
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 100) {
+    $('.burger').fadeIn();
+  } else {
+    $('.burger').fadeOut();
+  }
+});
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 100) {
+    $('.overlay_burger').fadeIn();
+  } else {
+    $('.overlay_burger').fadeOut();
   }
 });
 

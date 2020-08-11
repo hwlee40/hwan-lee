@@ -19,11 +19,7 @@
 	}
 }
 .header_contact{
-
 	display: none;
-	@media screen and (min-width: $screen-one) {
-		display: block;
-	}
 	@extend %mabryC;
 	color: $florescent-blue;
 	text-align: right;
@@ -32,6 +28,7 @@
 		@include mabryB;
 		font-size: 50px;
 		font-weight: 200;
+		display: block;
 	}
 	@media screen and (min-width: $screen-three) {
 		@include mabryB;
@@ -50,15 +47,12 @@
 }
 .header_hwan_projects{
 	@extend %mabryC;
-	font-weight: 200;
 	@media screen and (min-width: $screen-two) {
 		@include mabryB;
 		font-size: 50px;
-		font-weight: 200;
 	}
 	@media screen and (min-width: $screen-three) {
 		@include mabryB;
-		font-weight: 200;
 	}
 }
 
