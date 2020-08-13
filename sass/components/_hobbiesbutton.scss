@@ -1,7 +1,7 @@
 .hobby{
 	margin-right: 8px;
-	margin-bottom: 16px;
-	padding: 4px 12px;
+	margin-bottom: 14px;
+	padding: 4px 14px;
 	border-radius: 50px;
 	background: $raspberry-sunset;
 	display: inline-block;
@@ -13,8 +13,11 @@
 	@extend .hobby;
 	background: $peach-fuzz;
 
-	&:hover{
-		opacity: 0.2;
+	
+	@media screen and (min-width: $screen-one) {
+		&:hover{
+			opacity: 0.2;
+		}
 	}
 }
 
@@ -37,6 +40,16 @@
 @media screen and (min-width: $screen-three) {
 	.hobby{
 		margin-right: 20px;
+		margin-bottom: 25px;
+		padding: 8px 35px;
+	}
+	.hobby_inner{
+		font-size: 48px;
+	}
+}
+
+@media screen and (min-width: $screen-four) {
+	.hobby{
 		margin-bottom: 40px;
 		padding: 18px 40px;
 	}

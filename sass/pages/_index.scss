@@ -295,6 +295,14 @@
 	//navy background
 	.background_navy{
 		margin-top: 80px;
-		padding: 200px 200px 200px;
+		padding: 200px 170px 200px;
+	}
+}
+
+@media screen and (min-width: $screen-four) {
+	//navy background
+	.background_navy{
+		padding: 200px 0 200px;
+		grid-column: 2/25;
 	}
 }

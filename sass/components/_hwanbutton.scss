@@ -28,8 +28,18 @@
 @media screen and (min-width: $screen-three) {
 	.hwan{
 		margin-left: 20px;
-		padding: 14px 60px;
+		padding: 14px 40px;
 		border-radius: 100px;
+	}
+	.hwan_inner{
+		font-size: 88px;
+	}
+}
+
+@media screen and (min-width: $screen-four) {
+	.hwan{
+		margin-left: 20px;
+		padding: 14px 60px;
 	}
 	.hwan_inner{
 		@include mabryA;

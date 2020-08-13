@@ -81,7 +81,7 @@
 	@include mabryB;
 }
 .index_hi{
-	@include mabryA;
+	font-size: 88px;
 }
 
 .index_risd{
@@ -103,4 +103,10 @@
 .projects_more{
 	@include mabryD;
 }
+}
+
+@media screen and (min-width: $screen-four) {
+	.index_hi{
+		@include mabryA;
+	}
 }

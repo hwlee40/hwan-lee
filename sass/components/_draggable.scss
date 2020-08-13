@@ -26,14 +26,14 @@
 }
 /* white circles */
 .flickity-page-dots .dot {
-  width: 8px;
-  height: 8px;
-  opacity: 0.5;
+  width: 6px;
+  height: 6px;
+  opacity: 0.3;
   background: transparent;
-  border: 2px solid white;
+  border: 1.5px solid white;
 }
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
-  background: $salmon;
+  background: white;
 }
 /* uncss:ignore end */

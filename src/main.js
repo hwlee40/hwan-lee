@@ -116,6 +116,7 @@ $(document).scroll(function() {
     $('.header').fadeOut();
   }
 });
+
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 100) {
@@ -124,6 +125,7 @@ $(document).scroll(function() {
     $('.header_projects').fadeOut();
   }
 });
+
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 100) {
@@ -140,6 +142,7 @@ $(document).scroll(function() {
     $('.overlay_burger').fadeOut();
   }
 });
+
 
 //ScrollMagic
 
