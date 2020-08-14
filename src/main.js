@@ -19,6 +19,13 @@ $(function() {
   });
 });
 
+//Image Tags
+$(function() {
+  $(".relative").hover(function() {
+    $(this).children('.tag_outer').toggleClass("slide_in");
+  });
+});
+
 //Smooth Scrolling Index
 $(".hero_text_sticky_inner").click(function() {
     $('html').animate({
