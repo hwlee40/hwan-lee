@@ -40,8 +40,8 @@
 	margin-top: 16px;
 }
 .tag_buttons_inner{
-	font-size: 14px;
-	font-weight: 500;
+	@extend %mabryE;
+	
 	margin-right: 6px;
 	margin-bottom: 12px;
 	padding: 4px 12px;
