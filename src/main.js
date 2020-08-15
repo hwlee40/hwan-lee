@@ -22,7 +22,7 @@ $(function() {
 //Image Tags
 $(function() {
   $(".relative").hover(function() {
-    $(this).children('.tag_outer').toggleClass("slide_in");
+    $(this).children('.tag_animation').toggleClass("slide_in");
   });
 });
 
