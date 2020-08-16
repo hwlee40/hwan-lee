@@ -18,14 +18,14 @@
 	@media screen and (min-width: $screen-two) {
 		
 		position: absolute;
-		background: rgba(233, 234, 238, 0.95);
+		background: rgba(233, 234, 238, 0.93);
 		filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.25));
 		border-radius: 20px;
 
 		bottom: 12px;
 		//Center
 		left: 50%;
-		transform: translateX(-50%);
+		transform: translate(-50%, 0);
 
 		padding: 16px;
 		width: 85%;

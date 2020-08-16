@@ -1,8 +1,11 @@
 //slide in interaction
 %initial{
 	opacity: 0;
-	transform: translateY(50px);
+	transform: translateY(25px);
 	transition: all 0.3s ease-out;
+	@media screen and (min-width: $screen-one) {
+		transform: translateY(50px);
+	}
 }
 
 .grid_item_one {
@@ -115,18 +118,26 @@
 
 .tag_animation{
 	@media screen and (min-width: $screen-two) {
-	transform: translateX(100%);
-	transition: all 0.5s;
+	transform: translate(10px, 10px);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
 	}
 }
 
 /* uncss:ignore */
 .slide_in{
 	@media screen and (min-width: $screen-two) {
-		transform: translateX(0);
+		transform: translate(0,0);
+		opacity: 1;
 	}
 }
+
+.slide_initial{
+	transform: translateX(0);
+	transition: all 0.2s ease-in-out;
+}
+
 /* uncss:ignore */
-.fade_in{
-	opacity: 1;
+.slide_right{
+	transform: translateX(10px);
 }

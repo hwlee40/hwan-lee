@@ -3,13 +3,23 @@
 	background-color: $florescent-blue;
 	width: 0px; 
 	height: 0px;
-	border-radius: 50%;
+	border-radius: 47% 51% 48% 53%;
 	z-index: -999;
 	visibility: hidden;
 	transition: background-color 0.3s ease;
 
+	-webkit-animation: rotation 15s infinite linear;
+	@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
 	@media screen and (min-width: $screen-one) {
-		width: 200px; 
+		width: 220px; 
 		height: 200px;
 		visibility: visible;
 	}
@@ -20,6 +30,7 @@
 		transform: scale(2);
 	}
 }
+
 //circle bg colors
 /* uncss:ignore start */
 .bg_1{
@@ -42,7 +53,7 @@
 }
 .bg_sneakers{
 	background-color: none;
-	background-image:url(https://media.giphy.com/media/l0NhWHQnlNJLA2vqE/giphy.gif);
+	background-image:url(https://media.giphy.com/media/VDkBtCDN4Ju7aLk3Bp/giphy-downsized.gif);
 	background-size: 200px;
 }
 .bg_spaghetti{

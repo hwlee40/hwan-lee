@@ -1,7 +1,9 @@
 import ScrollMagic from 'scrollmagic';
 
-//Hamburger
+
 $(document).ready(function(){
+
+ //Hamburger 
   $('#nav-icon3').click(function(){
     $(this).toggleClass('open');
   });
@@ -10,7 +12,7 @@ $(document).ready(function(){
     $(".overlay_burger").toggleClass("slide_in");
   });
 
-});
+
 
 //Contact
 $(function() {
@@ -26,6 +28,13 @@ $(function() {
   });
 });
 
+//Footer Slide
+$(function() {
+  $(".slide_initial").hover(function() {
+    $(this).toggleClass("slide_right");
+  });
+});
+
 //Smooth Scrolling Index
 $(".hero_text_sticky_inner").click(function() {
     $('html').animate({
@@ -33,8 +42,9 @@ $(".hero_text_sticky_inner").click(function() {
     }, 400);
 });
 
+
+
 //Flickity Carousel Interactivity
-$(document).ready(function(){
     $('.container_slides').flickity({
     	prevNextButtons: false,
     	pageDots: true,
@@ -44,14 +54,11 @@ $(document).ready(function(){
         wrapAround: true,
         cellAlign: 'right',
     });
-  });
 
 
 
 
 //Circle follows Cursor
-jQuery(document).ready(function() {
-
   var mouseX = 0, mouseY = 0;
   var xp = 0, yp = 0;
    
@@ -96,8 +103,6 @@ jQuery(document).ready(function() {
         $(".circle").toggleClass("bg_1");
     });
     
-
-});
 
 
 
@@ -153,7 +158,7 @@ $(document).scroll(function() {
 
 //ScrollMagic
 
-$(document).ready(function(){
+
     var controller = new ScrollMagic.Controller();
 
     //Loop
@@ -194,4 +199,6 @@ $(document).ready(function(){
         .addTo(controller);
     });
     
+
+
 });

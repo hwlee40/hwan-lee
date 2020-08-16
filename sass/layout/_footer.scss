@@ -1,14 +1,17 @@
-//footer stick to bottom
-.content {
-	min-height: calc(100vh - 94px);
-}
+
 
 //footer
 .footer{
 	width: 100%;
 	position: absolute;
 	background: $salmon;
-	height: 94px;
+	height: 96px;
+	@media screen and (min-width: $screen-one) {
+		height: 112px;
+	}
+	@media screen and (min-width: $screen-two) {
+		height: 132px;
+	}
 }
 .footer_inner{
 	margin: 14px 17px 14px;
@@ -22,6 +25,7 @@
 }
 .footer_content_style{
 	color: white;
+	margin-bottom: 2px;
 }
 
 //icon positioning
@@ -36,11 +40,8 @@
 }
 
 @media screen and (min-width: $screen-one) {
-	.footer{
-		height: 130px;
-	}
 	.footer_inner{
-		margin: 24px 20px 32px;
+		margin: 24px 20px 0px;
 	}
 	.mabry_g{
 
@@ -48,30 +49,15 @@
 }
 
 @media screen and (min-width: $screen-two) {
-	.footer{
-		height: 138px;
-	}
 	.footer_inner{
-		margin: 30px 20px 30px;
+		margin: 30px 20px 0px;
 	}
 	.mabry_g{
 		@include mabryF;
 	}
 }
-
-@media screen and (min-width: $screen-three) {
-	.footer{
-		
-	}
-	.footer_inner{
-		margin: 30px 20px 30px;
-	}
-	.mabry_g{
-		
-	}
-}
 @media screen and (min-width: $screen-four){
 	.footer_inner{
-		margin: 30px 12vw 30px;
+		margin: 30px 12vw 0px;
 	}
 }
