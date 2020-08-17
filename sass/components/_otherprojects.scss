@@ -1,39 +1,59 @@
 .other_projects{
+	display: none;
 	border-radius: 15px;
 	overflow: hidden;
 	width: 100%;
 	height: 75px;
 	object-fit: cover;
 	filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2));
-	transition: transform 0.1s;
-
-	&:hover{
-		-webkit-transform: scale(1.05);
-	}
 }
 
 @media screen and (min-width: $screen-one) {
 	.other_projects{
 		height: 100px;
+		display: block;
 	}
 }
 
 @media screen and (min-width: $screen-two) {
 	.other_projects{
 		height: 140px;
-
-		&:hover{
-		-webkit-transform: scale(1.03);
-	}
 	}
 }
 
 @media screen and (min-width: $screen-three) {
 	.other_projects{
 		height: 180px;
+	}
+}
 
-		&:hover{
-		-webkit-transform: scale(1.02);
+.projects_tag_outer_right{
+	top: 10px;
+	right: 20px;
+	position: absolute;
+
+	display: none;
+	@media screen and (min-width: $screen-one) {
+		display: block;
 	}
+
+}
+.projects_tag_outer_left{
+	@extend .projects_tag_outer_right;
+	left: 20px;
+}
+.projects_tag_inner_dark{
+	@extend %mabryC;
+	color: black;
+	font-size: 18px;
+	@media screen and (min-width: $screen-two) {
+		font-size: 26px;
 	}
+	@media screen and (min-width: $screen-two) {
+		font-size: 36px;
+	}
+}
+.projects_tag_inner_light{
+	@extend .projects_tag_inner_dark;
+	color: $ivory;
 }

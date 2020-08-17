@@ -11,3 +11,26 @@
 	color: $florescent-blue;
 	//styled with h5
 }
+
+
+//Learn More
+.learnmore_outer{
+	transition: all 0.2s ease-in-out;
+	margin-top: 32px;
+	margin-left: 16px;
+	@media screen and (min-width: $screen-one) {
+		margin-left: 20px;
+		width: 50vw;
+	}
+	@media screen and (min-width: $screen-two) {
+		margin-left: 0px;
+	}
+}
+.learnmore_inner{
+	@extend %mabryD;
+	color: $florescent-blue;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}

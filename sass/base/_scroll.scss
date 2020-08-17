@@ -136,8 +136,22 @@
 	transform: translateX(0);
 	transition: all 0.2s ease-in-out;
 }
+.projects_tag_outer_right{
+	transform: translate(-20px, 0);
+	opacity: 0;
+	transition: all 0.3s;
+}
+.projects_tag_outer_left{
+	transform: translate(20px, 0);
+	opacity: 0;
+	transition: all 0.3s;
+}
 
 /* uncss:ignore */
 .slide_right{
-	transform: translateX(10px);
+	transform: translateX(0px);
+	@media screen and (min-width: $screen-one) {
+		transform: translateX(10px);
+	}
+	opacity: 1;
 }

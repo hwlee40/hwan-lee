@@ -22,6 +22,7 @@
 
 .projects_more{
 	@extend %mabryCardB;
+	display: none;
 }
 
 @media screen and (min-width: $screen-one) {
@@ -46,7 +47,7 @@
 }
 
 .projects_more{
-	//no changes
+	display: block;
 }
 }
 

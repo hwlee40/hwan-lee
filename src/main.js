@@ -28,10 +28,27 @@ $(function() {
   });
 });
 
-//Footer Slide
+//Footer Slide & Learn More
 $(function() {
   $(".slide_initial").hover(function() {
     $(this).toggleClass("slide_right");
+  });
+});
+$(function() {
+  $(".slide_initial").hover(function() {
+    $(this).parent('.learnmore_outer').toggleClass("slide_right");
+  });
+});
+
+//Other Projects
+$(function() {
+  $(".link_style_fix").hover(function() {
+    $(this).children('.projects_tag_outer_right').toggleClass("slide_in");
+  });
+});
+$(function() {
+  $(".link_style_fix").hover(function() {
+    $(this).children('.projects_tag_outer_left').toggleClass("slide_in");
   });
 });
 
