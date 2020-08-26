@@ -69,6 +69,7 @@ $(".hero_text_sticky_inner").click(function() {
     	dragThreshold: 8,
     	rightToLeft: false,
         wrapAround: true,
+        imagesLoaded: true,
         cellAlign: 'right',
     });
 
