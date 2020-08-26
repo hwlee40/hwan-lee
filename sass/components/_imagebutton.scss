@@ -22,22 +22,45 @@
 		filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.25));
 		border-radius: 20px;
 
-		bottom: 12px;
+		bottom: 6px;
 		//Center
 		left: 50%;
 		transform: translate(-50%, 0);
 
 		padding: 16px;
+		width: 82%;
+	}
+	@media screen and (min-width: 1200px) {
+		bottom: 10px;
+	}
+	@media screen and (min-width: $screen-three) {
+		bottom: 12px;
 		width: 85%;
+	}
+	@media screen and (min-width: $screen-four) {
+		bottom: 7px;
 	}
 }
 .tag_title{
 	@extend %mabryD;
 	color: black;
 	line-height: 120%;
+
+	@media screen and (min-width: $screen-two) {
+		font-size: 20px;
+	}
+	@media screen and (min-width: $screen-three) {
+		font-size: 24px;
+	}
 }
 .tag_buttons_outer{
 	margin-top: 16px;
+	@media screen and (min-width: $screen-two) {
+		margin-bottom: -8px;
+	}
+	@media screen and (min-width: $screen-three) {
+		margin-bottom: 0px;
+	}
 }
 .tag_buttons_inner{
 	@extend %mabryE;
@@ -50,6 +73,4 @@
 	display: inline-block;
 	filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.25));
 	color: $florescent-blue;
-
-
 }
