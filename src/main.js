@@ -25,6 +25,7 @@ $(function() {
 $(function() {
   $(".relative").hover(function() {
     $(this).children('.tag_animation').toggleClass("slide_in");
+    $(this).toggleClass("add_shadow");
   });
 });
 
