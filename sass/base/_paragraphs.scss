@@ -13,7 +13,7 @@
 }
 
 .projects_title{
-	//Used h3 to declare initial @extend
+	line-height: 110%;
 }
 
 .projects_description{
@@ -40,10 +40,11 @@
 
 .projects_title{
 	@include mabryB;
+	line-height: 110%;
 }
 
 .projects_description{
-	//no changes
+	font-size: 24px;
 }
 
 .projects_more{
@@ -69,7 +70,7 @@
 }
 
 .projects_description{
-	//no changes
+	padding-top: 5px;
 }
 
 .projects_more{
@@ -98,7 +99,7 @@
 }
 
 .projects_description{
-	@include apocB;
+
 }
 
 .projects_more{
