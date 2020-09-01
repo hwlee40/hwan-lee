@@ -34,6 +34,7 @@
 		bottom: 10px;
 	}
 	@media screen and (min-width: $screen-three) {
+		padding: 20px;
 		bottom: 12px;
 		width: 85%;
 	}
@@ -56,10 +57,12 @@
 .tag_buttons_outer{
 	margin-top: 16px;
 	@media screen and (min-width: $screen-two) {
-		margin-bottom: -8px;
+		margin-bottom: -12px;
+		//bottom 12 from button line padding
 	}
 	@media screen and (min-width: $screen-three) {
-		margin-bottom: 0px;
+		margin-top: 20px;
+		margin-bottom: -12px;
 	}
 }
 .tag_buttons_inner{
