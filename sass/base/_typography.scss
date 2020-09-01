@@ -1,14 +1,4 @@
 //Imports
-//AT APOC
-@font-face {
-	font-family: 'AT Apoc';
-	src: url('../assets/fonts/atApoc/AtApocRevelations.eot'); /* IE9 Compat Modes */
-	src: url('../assets/fonts/atApoc/AtApocRevelations.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    	url('../assets/fonts/atApoc/AtApocRevelations.woff2') format('woff2'), /* Super Modern Browsers */
-    	url('../assets/fonts/atApoc/AtApocRevelations.woff') format('woff'), /* Pretty Modern Browsers */
-    	url('../assets/fonts/atApoc/AtApocRevelations.ttf')  format('truetype'), /* Safari, Android, iOS */
-    	url('../assets/fonts/atApoc/AtApocRevelations.svg#ATApoc-Revelations') format('svg'); /* Legacy iOS */
-}
 //Mabry Pro
 @font-face {
 	font-family: 'Mabry Pro';
@@ -134,34 +124,6 @@
 }
 %mabryCardB{
 	@include mabryCardB;
-}
-
-//AT APOC Styles
-@mixin apocA{
-	font-size: 36px;
-	line-height: 130%;
-	font-family: 'Mabry Pro';
-	font-weight: 100;
-}
-%apocA{
-	@include apocA;
-}
-@mixin apocB{
-	font-size: 24px;
-	line-height: 130%;
-	font-weight: 100;
-	font-family: 'Mabry Pro';
-}
-%apocB{
-	@include apocB;
-}
-@mixin apocC{
-	font-size: 16px;
-	line-height: 130%;
-	font-family: 'Mabry Pro';
-}
-%apocC{
-	@include apocC;
 }
 
 //h1~h6

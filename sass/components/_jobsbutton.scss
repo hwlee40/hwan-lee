@@ -1,21 +1,23 @@
 .about_button{
-	display: inline-block;
-	background: $raspberry-sunset;
-	padding: 4px 10px 5px;
-	border-radius: 20px;
-	filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2));
+		display: inline-block;
+	@media screen and (min-width: $screen-one) {
+		background: $raspberry-sunset;
+		padding: 4px 15px 5px;
+		margin: 0px 3px 0px;
+		border-radius: 20px;
+		filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2));
+	}
 }
 
 .about_button_inner{
-	color: white;
-	font-weight: normal;
-	//font styled with h5
-}
-
-@media screen and (min-width: $screen-one) {
-	.about_button_inner{
-		@include mabryCardB;
-	}
+	color: $florescent-blue;
+	@include mabryCardB;
+	font-weight: bold;
+		@media screen and (min-width: $screen-one) {
+			color: white;
+			font-weight: normal;
+			//font styled with h5
+		}
 }
 
 @media screen and (min-width: $screen-three) {

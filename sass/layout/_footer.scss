@@ -2,12 +2,14 @@
 
 //footer
 .footer{
+	margin-top: 40px;
 	width: 100%;
 	position: absolute;
 	background: $salmon;
 	height: 96px;
 	@media screen and (min-width: $screen-one) {
 		height: 112px;
+		margin-top: 0px;
 	}
 	@media screen and (min-width: $screen-two) {
 		height: 132px;

@@ -2,6 +2,7 @@
 	@extend %mabryC;
 	color: white;
 	display: inline-block;
+	margin-bottom: 10px;
 }
 
 .index_risd{
@@ -9,7 +10,8 @@
 }
 
 .index_aboutme{
-	@extend %apocC;
+	@extend %mabryCardB;
+	line-height: 140%;
 }
 
 .projects_title{
@@ -17,7 +19,10 @@
 }
 
 .projects_description{
-	@extend %apocC;
+	@extend %mabryE;
+	font-size: 17px;
+	line-height: 19pt;
+	font-weight: normal;
 }
 
 .projects_more{
@@ -35,7 +40,9 @@
 }
 
 .index_aboutme{
-	@include apocB;
+	@include mabryCardA;
+	font-weight: 100;
+	line-height: 140%;
 }
 
 .projects_title{
@@ -45,6 +52,8 @@
 
 .projects_description{
 	font-size: 24px;
+	line-height: 26pt;
+	font-weight: 100;
 }
 
 .projects_more{
@@ -91,7 +100,8 @@
 }
 
 .index_aboutme{
-	@include apocA;
+	@include mabryC;
+	font-weight: 100;
 }
 
 .projects_title{

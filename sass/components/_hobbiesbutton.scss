@@ -1,7 +1,7 @@
 .hobby{
 	margin-right: 8px;
-	margin-bottom: 14px;
-	padding: 4px 14px;
+	margin-bottom: 16px;
+	padding: 6px 16px;
 	border-radius: 50px;
 	background: $raspberry-sunset;
 	display: inline-block;
@@ -22,7 +22,7 @@
 }
 
 .hobby_inner{
-	@extend %mabryCardB;
+	@extend %mabryD;
 	font-weight: 600;
 	color: white;
 }
