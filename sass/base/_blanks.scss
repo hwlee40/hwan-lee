@@ -2,7 +2,7 @@
 .sp_purple_about{
 	margin-top: 24px; //+16x2 from row gap
 	@media screen and (min-width: $screen-one) {
-		margin-top: 40px; //+20x2 from row gap
+		margin-top: 100px; //+20x2 from row gap
 	}
 	@media screen and (min-width: $screen-two) {
 		margin-top: 100px; //+20x2 from row gap
@@ -15,7 +15,7 @@
 .bottom_space_index{
 	height: 56px;
 	@media screen and (min-width: $screen-one) {
-		height: 80px;
+		height: 140px;
 	}
 	@media screen and (min-width: $screen-two) {
 		height: 160px;
@@ -45,7 +45,7 @@
 
 //more projects -- footer
 .bottom_space_projects{
-	height: 16px;
+	height: 56px;
 	@media screen and (min-width: $screen-one) {
 		height: 40px;
 	}

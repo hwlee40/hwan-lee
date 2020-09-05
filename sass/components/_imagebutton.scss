@@ -66,11 +66,12 @@
 	}
 }
 .tag_buttons_inner{
-	@extend %mabryE;
+	@extend %mabryG;
+	font-weight: 600;
 	
 	margin-right: 6px;
 	margin-bottom: 12px;
-	padding: 4px 12px;
+	padding: 2px 12px;
 	border-radius: 50px;
 	background: white;
 	display: inline-block;

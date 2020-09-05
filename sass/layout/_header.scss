@@ -19,6 +19,7 @@
 	}
 }
 .header_contact{
+	margin-top: 8px;
 	display: none;
 	@extend %mabryC;
 	color: $florescent-blue;
@@ -36,6 +37,10 @@
 	}
 }
 .header_projects{
+	top: 4px;
+	@media screen and (min-width: $screen-two) {
+		top: 8px;
+	}
 	z-index: 99999;
 	left: 16px;
 	right: auto;
@@ -136,7 +141,10 @@
 .hero_text_sticky{
 	position: -webkit-sticky;
 	position: sticky;
-	top: 0;
+	top: 4px;
+	@media screen and (min-width: $screen-two) {
+		top: 8px;
+	}
 	z-index: 999;
 	@extend %initial;
 }

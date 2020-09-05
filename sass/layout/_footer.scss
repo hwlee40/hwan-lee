@@ -2,28 +2,20 @@
 
 //footer
 .footer{
-	margin-top: 40px;
 	width: 100%;
 	position: absolute;
 	background: $salmon;
-	height: 96px;
-	@media screen and (min-width: $screen-one) {
-		height: 112px;
-		margin-top: 0px;
-	}
-	@media screen and (min-width: $screen-two) {
-		height: 132px;
-	}
+	height: 116px;
 }
 .footer_inner{
-	margin: 14px 17px 14px;
+	margin: 20px;
 	display: flex;
 }
 
 
 //text styling
 .mabry_g{
-	@extend %mabryG;
+	@extend %mabryH;
 }
 .footer_content_style{
 	color: white;
@@ -39,27 +31,4 @@
 .footer_icons_inner{
 	padding: 0 5px;
 	width: 25px;
-}
-
-@media screen and (min-width: $screen-one) {
-	.footer_inner{
-		margin: 24px 20px 0px;
-	}
-	.mabry_g{
-
-	}
-}
-
-@media screen and (min-width: $screen-two) {
-	.footer_inner{
-		margin: 30px 20px 0px;
-	}
-	.mabry_g{
-		@include mabryF;
-	}
-}
-@media screen and (min-width: $screen-four){
-	.footer_inner{
-		margin: 30px 12vw 0px;
-	}
 }

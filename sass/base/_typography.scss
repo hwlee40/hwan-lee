@@ -80,17 +80,17 @@
 	@include mabryD;
 }
 @mixin mabryE{
-	font-size: 14px;
-	line-height: 113%;
+	font-size: 20px;
+	line-height: 140%;
 	font-family: 'Mabry Pro';
-	font-weight: 600;
+	font-weight: normal;
 }
 %mabryE{
 	@include mabryE;
 }
 @mixin mabryF{
-	font-size: 12px;
-	line-height: 113.5%;
+	font-size: 17px;
+	line-height: 150%;
 	font-family: 'Mabry Pro';
 	font-weight: normal;
 }
@@ -98,13 +98,22 @@
 	@include mabryF;
 }
 @mixin mabryG{
-	font-size: 10px;
-	line-height: 113.5%;
+	font-size: 15px;
+	line-height: 150%;
 	font-family: 'Mabry Pro';
 	font-weight: normal;
 }
 %mabryG{
 	@include mabryG;
+}
+@mixin mabryH{
+	font-size: 12px;
+	line-height: 110%;
+	font-family: 'Mabry Pro';
+	font-weight: normal;
+}
+%mabryH{
+	@include mabryH;
 }
 @mixin mabryCardA{
 	font-size: 24px;
